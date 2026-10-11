@@ -24,8 +24,8 @@ const News = (props) => {
     props.setProgress(30);
     let parsedData = await data.json();
     props.setProgress(70);
-    setArticles(parsedData.articles);
-    setTotalResults(parsedData.totalResults);
+    setArticles(parsedData.articles || []);
+    setTotalResults(parsedData.totalResults || 0);
     setLoading(false);
 
     props.setProgress(100);
@@ -33,7 +33,7 @@ const News = (props) => {
 
   useEffect(() => {
     updateNews();
-  }, [category])
+  }, [category]);
 
   const fetchMoreData = async () => {
     setPage(page + 1);
@@ -47,7 +47,7 @@ const News = (props) => {
 
     setArticles(articles.concat(parsedData.articles || []));
     setPage(page + 1);
-    setTotalResults(parsedData.totalResults);
+    setTotalResults(parsedData.totalResults || 0);
     setLoading(false);
   };
 
