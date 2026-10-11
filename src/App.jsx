@@ -28,7 +28,7 @@ const App = () => {
     />
   );
   return (
-    <BrowserRouter basename="/KhabarSetu">
+    <BrowserRouter>
       <div>
         <Navbar />
         <LoadingBar
