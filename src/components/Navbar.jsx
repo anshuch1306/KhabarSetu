@@ -30,11 +30,6 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto gap-lg-3">
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/" end>
-                Home
-              </NavLink>
-            </li>
             {categories.map((category) => (
               <li key={category}>
                 <NavLink className="nav-link text-capitalize" to={`/${category}`}>
