@@ -1,16 +1,96 @@
-# React + Vite
+# 📰 KhabarSetu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Your daily connection to the latest news.**
 
-Currently, two official plugins are available:
+KhabarSetu is a React-based news web application that allows users to explore the latest articles across multiple categories through a simple and user-friendly interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🏠 **Category-Based News:** Browse General, Business, Entertainment, Health, Science, Sports, and Technology news.
+- 🔍 **Search Functionality:** Search for news articles using keywords.
+- ♾️ **Infinite Scrolling:** Load more articles automatically while scrolling.
+- 📰 **News Cards:** View article titles, descriptions, images, sources, authors, and publication dates.
+- 📱 **Responsive Interface:** Browse news using a responsive Bootstrap layout.
+- ⚡ **Loading Indicator:** Track loading progress while fetching news.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React.js, JavaScript, HTML, CSS
+- **Build Tool:** Vite
+- **Styling:** Bootstrap
+- **Routing:** React Router DOM
+- **API:** NewsAPI
+- **Libraries:** React Infinite Scroll Component, React Top Loading Bar
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/anshuch1306/KhabarSetu.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd KhabarSetu
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure the API key
+
+Create a `.env.local` file in the project's root directory and add:
+
+```env
+VITE_NEWS_API_KEY=your_newsapi_key
+```
+
+Replace `your_newsapi_key` with your own API key from [NewsAPI](https://newsapi.org/).
+
+**Important:** Never upload your `.env.local` file or publish your API key.
+
+### 5. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal to use KhabarSetu.
+
+## 📂 Project Structure
+
+```text
+KhabarSetu/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── News.jsx
+│   │   ├── NewsItem.jsx
+│   │   └── Spinner.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+├── .gitignore
+├── package.json
+└── vite.config.js
+```
+
+## 🎯 Project Goal
+
+The goal of KhabarSetu is to make browsing news across different topics easier by bringing category navigation, keyword search, and continuous article loading into one application.
+
+## 👩‍💻 Author
+
+**Anshu Choudhary**
+
+GitHub: [@anshuch1306](https://github.com/anshuch1306)
+
+---
+
+*Built with React and Vite.*
