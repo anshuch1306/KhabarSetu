@@ -28,7 +28,7 @@ const App = () => {
     />
   );
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/KhabarSetu">
       <div>
         <Navbar />
         <LoadingBar
@@ -39,6 +39,10 @@ const App = () => {
         <Routes>
           <Route
             path="/"
+            element={showNews("general")}
+          />
+          <Route
+            path="/general"
             element={showNews("general")}
           />
 
